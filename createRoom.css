@@ -1,0 +1,47 @@
+.logo{
+    font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+.header{
+    background-color: #d7e8e5;
+    text-align: center;
+    padding:30px;
+}
+
+.generate{
+    border-style:solid;
+    text-align: center;
+    margin-top: 10px;
+    border-color: #61a598;
+    border-radius: 8px;
+    font-family:  League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.generator{
+    font-family:  League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    cursor: pointer;
+    background-color: #b0d2cb;
+    border-radius: 8px;
+    padding: 8px 18px;
+}
+
+.code{
+    text-align: center;
+    margin-top: 40px;
+}
+
+.description{
+    font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.goToRoom {
+    font-family: League system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    cursor:pointer;
+    background-color:#b0d2cb;
+    padding: 8px 18px;
+    border-radius: 8px;
+}

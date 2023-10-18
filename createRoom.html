@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CreateARoom</title>
+        <link rel="stylesheet" href ="createRoom.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+
+    </head>
+    <body>
+        <div class = "header">
+            <h1 class = "logo">Create A Private Room</h1>
+        </div>
+
+        <div class = "generate">
+            <p>Generate a private room and start planning your meet ups!</p>
+        </div>
+
+        <div class = "code">
+            <button class = "generator" onclick="document.getElementById('demo').innerHTML = getRndInteger(0,10000)"> generate </button>
+        <p id="demo"></p>
+        <script>
+           function getRndInteger(min, max) {
+        return Math.floor(Math.random() * (max - min)) + min;
+        }
+        </script>
+
+        <p class = "description">Share this code with your party!</p>
+        <button class = "goToRoom"  onclick="window.location.href='file:///Users/danielledang/Desktop/GetTogether/dashboard.html';">Go to your online planning room!</button>
+        </div>
+        
+    </body>
+</html>

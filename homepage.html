@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>GetTogether</title>
+        <link rel="stylesheet" href ="homepage.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    
+
+    </head>
+    <body>
+        <div class = "header">
+            <h1 class = "logo">Get Together</h1>
+            <h2 class = "sublogo">making plans easier</h2>
+        </div>
+        
+        <div class = "buttons">
+            <button class = "create" onclick="window.location.href='file:///Users/danielledang/Desktop/GetTogether/createRoom.html';">Create a Room</button>
+            <p class = "alreadyHaveCode">Already have a code?</p>
+
+            <button class = "enterCode" onclick="openForm()">Enter Code</button>
+
+
+            <div class="form-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1 class = "popUpHeader">Enter a Private Room</h1>
+              
+                  <label for="email"><b>Enter your name</b></label>
+                  <input type="text" placeholder="Name" name="email" required>
+              
+                  <label for="psw"><b>Room Code</b></label>
+                  <input type="password" placeholder="Room Code" name="psw" required>
+              
+                  <button type="submit" class="btn">Login</button>
+                  <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+                </form>
+              </div>
+
+              <script src="homepageScript.js"></script>
+
+
+        <div>
+
+        </div>
+
+    </body>
+</html>

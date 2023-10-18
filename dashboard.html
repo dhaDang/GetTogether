@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>dashboard</title>
+        <link rel="stylesheet" href ="dashboard.css"> 
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+       <div class = 'header'>
+        <h1 class = 'headerDescription'>Welcome</h1>
+       </div>
+
+       <div class = 'availability'>
+            <h2 class="description">Please fill in your availability below!</h2>
+            <p class="subDescription">write it in the format of mm/dd/yr at _ _ : _ _ pm/am </p>
+            <p class = "subTwo">Ex: 10/31/2023 at 10:00pm</p>
+
+            <input class = "box" type="text" placeholder="Your Availability">
+            <button class = submitBtn>Submit</button>
+            <ul class="timeList"></ul>
+        </div>
+
+        <div class = "suggestPlace" id="placeSec">
+            <h2 class = "description">Suggest a Place to meet up</h2>
+            <p class = 'subDescription'>Enter the location/name</p>
+            <p class = 'subTwo'>Ex: The lakehouse</p>
+
+            <input id = "locationInput" class = "box" type="text" placeholder="Location">
+            <button id='locationButton' class = 'submitBtn'>Submit</button>
+            <ul id ='locationList 'class ="locationList"></ul>
+        </div>
+
+        <div class = "suggestActivity" id="activitySec">
+            <h2 class = "description">Suggest an Activity</h2>
+            <p class = 'subDescription'>Enter Activity</p>
+            <p class = 'subTwo'>Ex: Bowling</p>
+
+            <input id = "activityInput" class = "box" type="text" placeholder="Activity">
+            <button id='activityBtn' class = 'submitBtn'>Submit</button>
+            <ul id ='activityList 'class ="locationList"></ul>
+        </div>
+
+        <div class = "chat" id="myForm">
+            <h2 class = "description">Discuss!</h2>
+            <p class = 'subDescription'>Look at everyone's availability and suggestions and start chatting</p>
+
+            <div class="chat-popup" id="myForm">
+                <form action="/action_page.php" class="form-container">
+                  <h1>Chat</h1>
+              
+                  <label for="msg"><b>Message</b></label>
+                  <textarea placeholder="Type message.." name="msg" required></textarea>
+              
+                  <button type="submit" class="btn">Send</button>
+
+                </form>
+              </div>
+
+              <p class="textBox"></p>
+
+        </div>
+
+        <script>
+            const btnEl = document.querySelector('button');
+            const inputEl = document.querySelector('input');
+            const listEl = document.querySelector('ul');
+
+            btnEl.addEventListener('click', () => {
+                const inputValue = inputEl.value;
+                listEl.insertAdjacentHTML('beforeend', `<li>${inputValue}</li>`); 
+            })
+
+            const btnTwo = document.querySelector('div.suggestPlace button');
+            const inputTwo = document.querySelector('div.suggestPlace input');
+            const listTwo = document.querySelector('div.suggestPlace ul');
+
+            btnTwo.addEventListener('click', () => {
+                const inputValTwo = inputTwo.value;
+                listTwo.insertAdjacentHTML('beforeend', `<li>${inputValTwo}</li>`);
+            })
+
+            const btnThree = document.querySelector('div.suggestActivity button')
+            const inputThree = document.querySelector('div.suggestActivity input');
+            const listThree = document.querySelector('div.suggestActivity ul');
+
+            btnThree.addEventListener('click', () => {
+                const inputValThree = inputThree.value;
+                listThree.insertAdjacentHTML('beforeend', `<li>${inputValThree}</li>`);
+            })
+
+        </script>
+
+    </body>
+</html>
